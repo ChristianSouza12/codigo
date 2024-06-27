@@ -32,7 +32,7 @@ export const Card = styled.div`
   position: relative;
   transition: 0.5s;
   cursor: pointer;
-  margin-bottom: 5px; /* Espaçamento entre os cards */
+  margin-bottom: 5px;
 
   img {
     width: 100%;
@@ -81,17 +81,17 @@ export const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: calc(50% - 10px); /* Ajuste para ocupar metade do espaço com espaçamento */
+    width: calc(50% - 10px);
     max-width: 300px;
     max-height: 400px;
-    margin-bottom: 10px; /* Aumenta o espaçamento entre os cards em telas menores */
-    margin-top: 20px; /* Novo ajuste para telas menores */
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
 
   @media (max-width: 480px) {
-    width: 100%; /* Cards ocupam toda a largura em telas pequenas */
-    margin-bottom: 10px; /* Aumenta o espaçamento entre os cards em telas menores */
-    margin-top: 20px; /* Novo ajuste para telas menores */
+    width: 100%; 
+    margin-bottom: 10px; 
+    margin-top: 20px;
   }
 `;
 
@@ -112,11 +112,11 @@ export const Title = styled.h2`
   }
 
   @media (max-width: 768px) {
-    padding-top: 2%; /* Subir o título em 10px */
+    padding-top: 2%;
   }
 
   @media (max-width: 480px) {
-    padding-top: 1%; /* Subir o título em 10px */
+    padding-top: 1%;
   }
 `;
 

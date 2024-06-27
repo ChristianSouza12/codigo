@@ -56,7 +56,7 @@ export const Links = styled.div`
 
   a {
     color: white;
-    margin-left: 10px; /* Espaçamento horizontal entre os links */
+    margin-left: 10px; 
     display: inline-block; 
     text-decoration: none; 
     transition: 0.3s ease-in-out;
