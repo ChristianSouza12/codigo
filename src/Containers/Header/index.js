@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Branding, Name, Links } from './styles';
 import { Link } from 'react-scroll';
 import Logo from '../../Assets/logo-coders.png';
+import useScrollReveal from "../../Hooks/useScrollReveal"
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,11 +23,13 @@ const Header = () => {
     };
   }, []);
 
+  useScrollReveal();
+
   return (
     <Container scrolled={scrolled}>
       <Branding>
         <Name>Chris<span>tian</span>.</Name>
-        <img src={Logo} alt="logo-coders" />
+        <img src={Logo} alt="logo-coders" className="reveal" />
       </Branding>
       <Links>
         <Link to="home" smooth={true} duration={500}>Sobre Mim</Link>
